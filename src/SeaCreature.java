@@ -28,7 +28,12 @@ public class SeaCreature {
 	public void eat() {
 		System.out.println(name + " is eating krabby patties");
 	}
+public static void main(String[] args) {
+	SeaCreature a = new SeaCreature("Squidweird");
+	System.out.println(a.getName());
+	a.eat();
 
+}
 	public void laugh() {
 		try {
 			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(

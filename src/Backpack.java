@@ -19,7 +19,19 @@ public class Backpack
 
 	public static void main(String[] args)
 	{
-		new Backpack().packAndCheck();
+		 
+		Backpack bp = new Backpack();
+		Pencil p = new Pencil();
+		Ruler r = new Ruler();
+		Textbook t = new Textbook();
+		bp.putInBackpack(p);
+		bp.putInBackpack(r);
+		bp.putInBackpack(t);
+		bp.goToSchool();
+		p.write("The next statement is true");
+		p.write("The previous statement is false");
+		r.measure();
+		t.read();
 	}
 
 	public void putInBackpack(Pencil supply)
@@ -111,4 +123,5 @@ class Textbook extends Supply
 	{
 		System.out.println("The history of Iceland is long and interesting");
 	}
+	
 }
